@@ -1,0 +1,27 @@
+## compras teste phyton ##
+valor = float(input('Digite o valor da sua compra: R$'))
+print('''Escolha a forma de pagamento:
+[ 1 ] pagamento á vista / dinheiro ou pix
+[ 2 ] pagamento á vista no cartão
+[ 3 ] pagamento parcelado em 2x 
+[ 4 ] pagamento parcelado em 3x ou mais : ''')
+opção = int(input('OPÇÃO:'))
+if opção == 1:
+    desconto = valor - (valor*10/ 100)
+    print('Você pagará R${:.2f} com DESCONTO!'.format(desconto))
+elif opção == 2:
+    desconto = valor - (valor*5/100)
+    print('Você pagará R${:.2f} com DESCONTO!'.format(desconto))
+elif opção == 3:
+    juros = valor + (valor*5/100)
+    totalpc = juros / 2 
+    print('Você pagará 2x de {:.2f}'.format(totalpc))
+    print('Valor final com juros R${:.2f}'.format(juros))
+elif opção == 4:
+    parcelas = int(input('Em quantas vezes você gostaria de parcelar?'))
+    if parcelas >=3:
+         juros = valor + (valor*20/100)
+    totalpc = juros / opção
+    print('Você pagará {}x de {:.2f}'.format(opção,totalpc))
+    print('Valor final com juros R${:.2f}'.format(juros))
+   
