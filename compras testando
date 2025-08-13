@@ -23,5 +23,5 @@ elif opção == 4:
          juros = valor + (valor*20/100)
     totalpc = juros / opção
     print('Você pagará {}x de {:.2f}'.format(opção,totalpc))
-    print('Valor final com juros R${:.2f}'.format(juros))
+    print('Valor final com juros R${:.2f}!'.format(juros))
    
