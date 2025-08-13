@@ -1,4 +1,5 @@
-## compras teste phyton ##
+## compras teste phyton. teste ##
+##teste##
 valor = float(input('Digite o valor da sua compra: R$'))
 print('''Escolha a forma de pagamento:
 [ 1 ] pagamento á vista / dinheiro ou pix
